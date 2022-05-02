@@ -25,7 +25,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 function removeKFromList(l, k) {
   let move = l 
   if(l.value === k) l = l.next
-  while(move.next==true){ 
+  while(move.next === null){ 
     if(move.next.value === k){ 
       move.next = move.next.next
     }
